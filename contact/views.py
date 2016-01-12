@@ -45,5 +45,4 @@ def contact_form(request):
                 pass
     else:
         form = ContactForm()
-
     return render(request, 'contact/form.html', {'form':form})

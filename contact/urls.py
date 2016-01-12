@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from .views import contact_form
 
-urlpatterns = patterns('contact.views',
-    url(r'^$', 'contact_form', name="contact_form"),
-)
+urlpatterns = [
+    url(r'^$', contact_form, name="contact_form"),
+]
